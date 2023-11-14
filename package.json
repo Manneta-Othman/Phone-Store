@@ -1,25 +1,18 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
+  "name": "phone-store",
+  "version": "1.0.0",
+  "description": "Phone Store",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js"
   },
+  "keywords": [],
+  "author": "Othman Manneta",
+  "license": "ISC",
   "dependencies": {
-    "next": "14.0.2",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.2",
-    "sass": "^1.69.5",
-    "typescript": "^5"
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
   }
 }
