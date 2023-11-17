@@ -2,7 +2,7 @@ import { User } from "../models/user.model.js"
 import { errorHandler } from "../utils/error.js"
 import bcryptjs from 'bcryptjs'
 
-export const user = (req, res) => {
+export const test = (req, res) => {
   res.send('user-router')
 }
 
@@ -35,9 +35,6 @@ export const updateUser = async (req, res, next) => {
     next(err)
   }
 }
-
-
-
 
 
 export const deleteUser = async (req, res, next) => {
