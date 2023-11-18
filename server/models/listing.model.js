@@ -29,6 +29,10 @@ const listingSchema = new mongoose.Schema(
     },
     description:{
       type: [],
+    },
+    userRef:{
+      type: String,
+      required: true
     }
   }, 
   {
@@ -37,4 +41,6 @@ const listingSchema = new mongoose.Schema(
   }
 )
 
-export const Listing = mongoose.model("Listing", listingSchema)
+const Listing = mongoose.model("Listing", listingSchema)
+
+export default Listing
